@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Sunday';
+	src: url('../fonts/sunday.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/sunday.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/sunday.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/sunday.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/sunday.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/sunday.svg#sunday') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+body {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.stars, .twinkling {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+}
+  
+.stars {
+    background:#000 url(https://i.postimg.cc/hhFD7Nkf/apps-47636-13819498107583324-fb06b53a-4974-4acb-85e6-f6f363f85ab6-edec48d0-ec35-4a1f-8bf5-c455987b4a.png) repeat top center;
+    z-index: 0;
+}
+  
+.twinkling {
+    background-image: url(https://i.postimg.cc/CLpNr4PF/twinkling.png);
+    animation: 3s twinkle infinite;
+    animation-timing-function: linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+@keyframes twinkle {
+    from {backrgound-position: 0}
+    to {background-position: -100px 0}
+}
+
+.btn {
+    background-color: #000;
+    color: white;
+    font-size: 80px;
+    border-radius: 30px;
+    padding: 20px 60px 30px 60px;
+    border: 3px solid white;
+    font-family: 'Sunday';
+}
+
+.btn:hover {
+    background-color: rgb(59, 59, 59);
+    transition: 0.2s linear;
+    
+}

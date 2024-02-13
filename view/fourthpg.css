@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Sunday';
+	src: url('../fonts/sunday.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/sunday.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/sunday.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/sunday.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/sunday.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/sunday.svg#sunday') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    height: 150px;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/starssss.svg);
+    background-size: cover;
+}
+
+main {
+    padding: 60px;
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sunday';
+    color: white;
+    font-size: 60px;
+	animation: datada 2s ease 0s infinite normal forwards;
+}
+
+@keyframes datada {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translate(-3px, 3px);
+	}
+	40% {
+		transform: translate(-3px, -3px);
+	}
+	60% {
+		transform: translate(3px, 3px);
+	}
+	80% {
+		transform: translate(3px, -3px);
+	}
+	100% {
+		transform: translate(0);
+	}
+}
+
+.txt-blocks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+    text-align: center;
+}
+
+.block1 {
+    padding: 20px;
+    animation: show 2.5s forwards;
+    opacity: 0;
+}
+
+@keyframes show {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.block2 {
+    padding: 20px;
+    animation: show 2.5s forwards;
+    animation-delay: 4s;
+    opacity: 0;
+}
+
+.block3 {
+    padding: 20px;
+    animation: show 2.5s forwards;
+    animation-delay: 8s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block4 {
+    padding: 20px;
+    animation: show 2.5s forwards;
+    animation-delay: 12s;
+    opacity: 0;
+}
+
+.block5 {
+    padding: 20px;
+    animation: show 2.5s forwards;
+    animation-delay: 16s;
+    opacity: 0;
+}
+
+.block6 {
+    padding: 20px;
+    animation: show 2.5s forwards;
+    animation-delay: 20s;
+    opacity: 0;
+}
+
+.block7 {
+    padding: 20px;
+    animation: show 2.5s forwards;
+    animation-delay: 24s;
+    opacity: 0;
+}
+
+.video-block {
+    padding: 20px;
+    animation: show 2.5s forwards;
+    animation-delay: 20s;
+    opacity: 0;
+}
+
+footer {
+    height: 150px;
+    border-top: 2px solid white;
+    background-image: url(../img/starssss.svg);
+    background-size: cover;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Sunday';
+}
+
+.btn {
+    background-color: #000;
+    color: white;
+    font-size: 50px;
+    border-radius: 30px;
+    padding: 10px 30px 20px 30px;
+    border: 3px solid white;
+    font-family: 'Sunday';
+}
+
+.btn:hover {
+    background-color: rgb(59, 59, 59);
+    transition: 0.2s linear;
+}
