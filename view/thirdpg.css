@@ -131,6 +131,13 @@ h1 {
     opacity: 0;
 }
 
+.block7 {
+    padding: 20px;
+    animation: show 2.5s forwards;
+    animation-delay: 20s;
+    opacity: 0;
+}
+
 .btn {
     background-color: #000;
     color: white;
